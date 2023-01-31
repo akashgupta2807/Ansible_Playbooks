@@ -1,1 +1,5 @@
-35.200.229.103 ansible_user=akashgupta_2807
+[hosts]
+35.200.229.103 ansible_user=root
+
+[hosts:vars]
+ansible_python_interpreter=/usr/bin/python3
