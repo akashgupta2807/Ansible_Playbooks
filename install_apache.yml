@@ -4,6 +4,10 @@
   become: true
   tasks:
 
-  - name: install apache2 package
+  - name: install apache and php packages for Debian
     apt:
-      name: apache2
+      name: 
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
+      state: latest
+      update_cache: yes
