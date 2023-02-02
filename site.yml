@@ -12,3 +12,12 @@
         - "{{ php_package }}"
       state: latest
       update_cache: yes
+
+  - name: copy file
+    tags: apache, debian
+    copy:
+      src: default_site.html
+      dest: /var/www/html/index.html
+      owner: root
+      group: root
+      mode: 0644
