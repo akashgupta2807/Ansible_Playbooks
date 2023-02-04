@@ -1,0 +1,6 @@
+- name: create a user
+  tags: always
+  user: 
+    name: rachel
+    groups: root
+
