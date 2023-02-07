@@ -1,7 +1,2 @@
 [webservers]
-35.200.229.103 ansible_user=root
-
-[webservers:vars]
-ansible_python_interpreter=/usr/bin/python3
-apache_package=apache2
-php_package=libapache2-mod-php
+35.200.229.103
